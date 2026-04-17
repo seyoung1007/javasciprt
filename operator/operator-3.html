@@ -14,17 +14,17 @@
       let indcrease = document.querySelector("#indcrease");
       let decrease = document.querySelector("#decrease");
       let count = 0;
-      // 증가
+      //   증가
       indcrease.addEventListener("click", () => {
         count++;
-        console.log(count);
-        counter.textContent = `클릭 횟수 : ${count}`;
+        // console.log(count);
+        counter.textContent = `클릭 횟수 : ${count}`
       });
-      // 감소
-      decrease.addEventListener("click", () => {
+    //   감소
+    decrease.addEventListener("click", () => {
         count--;
-        console.log(count);
-        counter.textContent = `클릭 횟수 : ${count}`;
+        // console.log(count);
+        counter.textContent = `클릭 횟수 : ${count}`
       });
     </script>
   </body>

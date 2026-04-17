@@ -10,19 +10,25 @@
     <ul id="list">
       <!-- js출력 -->
       <!-- <li>사과</li>
-      <li>딸기</li>
-      <li>바나나</li> -->
+      <li>바나나</li>
+      <li>딸기</li> -->
     </ul>
+  
+
+<ul id="list1"></ul>
     <script>
-      const products = ["사과", "바나나", "딸기"];
+      const products = ["사과", "바나나", "딸기","포도"];
+      //  console.log(products);
       // console.log(products.length);
-      const proList = document.querySelector("#list");
+      const proList = document.querySelector("#list")
+
       for (let i = 0; i < products.length; i++) {
         // console.log(i);
         // console.log(products[3]);
-
-        proList.innerHTML += `<li>${products[i]}</li>`;
+        
+        proList.innerHTML += `<li>${products[i]}</li>`
       }
+      
     </script>
   </body>
 </html>
