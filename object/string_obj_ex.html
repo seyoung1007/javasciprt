@@ -39,9 +39,9 @@
         background: white;
         border-radius: 10px;
       }
-      .tag {
+      .tag{
         /* text-decoration: underline; */
-        background-color: blue;
+        background-color: rgb(181, 181, 255);
         color: #fff;
         display: inline-block;
         padding: 10px;
@@ -55,7 +55,7 @@
     <input
       type="text"
       id="hobby"
-      placeholder="관심사 입력 (예:게임, 운동, 코딩)"
+      placeholder="관심사 입력 (예:게임,운동,코딩)"
     />
     <button id="btn">확인</button>
     <div id="result">
@@ -72,28 +72,28 @@
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const hobby = document.getElementById("hobby").value;
-        // console.log(name, email, hobby);
-        // 1. trim() toUpperCase()
+        // console.log(name,email,hobby);
+        // 1.trim() toUpperCase()
         const cleanName = name.trim().toUpperCase();
         // 2.includes(이메일 검사 @ 포함여부)
         const isEmail = email.includes("@");
-        // 3. split(취미 나누기)
+        // 3.split(취미 나누기)
         const hobbyList = hobby.split(",");
-        // 4. 결과 출력
+        // 4.결과 출력
         let html = "";
         // 이름
         html += `<p>이름:${cleanName}</p>`;
         // 이메일
         if (isEmail) {
-          html += `<p style ="color:green">이메일 정상</p>`;
+          html += ` <p style = "color:green">이메일 정상</p>`;
         } else {
-          html += `<p style ="color:red">이메일 형식에 맞지 않습니다.</p>`;
+          html += ` <p style = "color:red">이메일 형식에 맞지 않습니다.</p>`;
         }
         html += `<p>관심사 : </p>`;
         // 관심사 출력(하나가 아니기 때문에 forEach())
         hobbyList.forEach((item) => {
-          //   console.log(item);
-          html += `<span class="tag"> ${item.trim()} </span>`;
+        //   console.log(item);
+        html += `<span class="tag"> ${item.trim()} </span> `
         });
         // 화면 출력
         result.innerHTML = html;

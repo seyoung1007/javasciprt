@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>foEach()</title>
+    <title>forEach()</title>
   </head>
   <body>
     <ul id="fruitList">
@@ -14,14 +14,15 @@
        <li>4.사과</li> -->
     </ul>
     <script>
-      const fruits = ["사과", "바나나", "포도","망고","수박"];
+      const fruits = ["사과", "바나나", "포도", "망고", "수박","사과", "바나나", "포도", "망고", "수박"];
       console.log(fruits);
       const list = document.getElementById("fruitList")
       fruits.forEach(function(item , index){
         // console.log(item);
         // console.log(index);
-        list.innerHTML += `<li>${index +1}.${item}</li>`
+        list.innerHTML += `<li>${index + 1}.${item}</li>`
         
+
       })
     </script>
   </body>

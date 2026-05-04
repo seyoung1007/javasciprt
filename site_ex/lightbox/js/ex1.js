@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  // console.log("확인완료");
+  // console.log("완료");
   const pics = document.querySelectorAll(".pic");
   const lightBox = document.querySelector("#lightBox");
   const lightBoxImg = document.querySelector("#lightBox-img");
@@ -7,14 +7,16 @@ window.addEventListener("load", () => {
   pics.forEach((pic) => {
     // console.log(pic);
     const bigSrc = pic.dataset.src;
+    // console.log(bigSrc);
     const bigTitle = pic.dataset.title;
-    // console.log(bigTitle);
+    console.log(bigTitle);
     pic.addEventListener("click", () => {
       lightBox.style.display = "flex";
       lightBoxImg.src = bigSrc;
       lightBoxTitle.textContent = bigTitle;
     });
   });
+  //  배경클릭시 닫기
   lightBox.addEventListener("click", () => {
     lightBox.style.display = "none";
   });

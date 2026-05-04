@@ -7,7 +7,7 @@ $(function () {
   $(".closeBtn").click(function () {
     // console.log("click");
     if (chk.is(":checked")) {
-      console.log(chk.is(":checked"));
+      // console.log(chk.is(":checked"));
 
       $.cookie("popup", "none", { expires: 3, path: "/" });
     }

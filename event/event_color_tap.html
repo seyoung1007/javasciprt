@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이벤트 컬러 탭</title>
+    <title>Document</title>
     <style>
       * {
         margin: 0;
@@ -38,7 +38,7 @@
         width: 500px;
         height: 300px;
         background-color: #fff;
-        border: 2px solid #a7a5a5;
+        border: 2px solid #eaeaea;
         margin: auto;
         border-radius: 10px;
       }
@@ -52,13 +52,13 @@
       <li><a href="#" onclick="changeBg('pink')">Pink</a></li>
     </ul>
     <div id="result">
-      <!-- js 출력 -->
+      <!-- js출력 -->
     </div>
     <script>
       const result = document.querySelector("#result");
       function changeBg(color) {
-        // consoe.log(color);
-        result.style.backgroundColor = color;
+        // console.log(color);
+        result.style.backgroundColor = color
       }
     </script>
   </body>

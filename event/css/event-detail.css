@@ -11,7 +11,7 @@
   margin: 200px auto;
 }
 .contain button{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255,255,255,0.5);
     border: none;
     padding: 10px;
 }
@@ -22,15 +22,15 @@
 .over {
   position: absolute;
   bottom: 30px;
-  right: 10px;
+  right: 30px;
 }
 .detail{
 padding: 10px;
 display: none;
 }
-.detail p{
-    padding-top: 10px 0;
 
+.detail p{
+    padding: 10px 0;
 }
 .detail button{
     display: block;

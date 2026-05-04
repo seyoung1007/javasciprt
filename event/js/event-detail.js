@@ -10,5 +10,5 @@ window.addEventListener("load", () => {
   close.addEventListener("click", () => {
     detail.style.display = "none";
     open.style.display = "block";
-  })
+  });
 });
